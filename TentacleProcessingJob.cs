@@ -5,7 +5,7 @@ using Unity.Jobs;
 using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.Splines.Interpolators;
-
+[BurstCompile]
 public struct TentacleProcessingJob : IJobParallelFor
 {
     public NativeArray<Vector3> lineVertices;
